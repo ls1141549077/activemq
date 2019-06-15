@@ -1,0 +1,16 @@
+spring:
+######## 消息队列的整合配置
+  activemq:
+    broker-url: tcp://localhost:61616
+    in-memory: true
+    user: admin
+    password: admin
+    pool:
+      enabled: false
+###################发布订阅模式
+  jms:
+    pub-sub-domain: true
+############################自定义配置###################################
+### activemq的队列
+queue-name: public.queue
+topic-name: publish.topic
